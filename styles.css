@@ -1,0 +1,177 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+*/
+body {
+  color: #fff;
+  background: hsl(233, 47%, 7%);
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 0.4rem;
+  margin: 0;
+  background: hsl(244, 38%, 16%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.text-wrapper {
+  padding: 12%;
+  text-align: left;
+  order: -1;
+  margin-right: 2rem;
+}
+
+.text-wrapper h1 {
+  font-family: "Inter", sans-serif;
+  max-height: fit-content;
+  font-size: 1.845rem;
+  margin-bottom: 20px;
+}
+
+
+
+.info {
+  display: flex;
+}
+
+.info {
+  margin-top: 5em;
+  justify-content: space-between;
+
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: #9d9d9d;
+  font-size: 14.675px;
+}
+
+.stats h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.56em;
+}
+
+.small {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: .875em;
+  padding: 5px;
+}
+
+.imageOverlayer {
+  height: 100%;
+  width: 100%;
+  min-height: 222px;
+  border-radius: 0 0.4rem 0.4rem 0;
+  padding-top: 100px;
+  overflow: hidden;
+  background: linear-gradient(rgba(113, 39, 161, 0.63), rgba(94, 39, 130, 0.51)),
+    url("/images/image-header-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 990px) {
+  .text-wrapper {
+    margin: 0;
+    padding: 4em 1.5em .4em 1.5em;
+    order: 0;
+    text-align: center;
+    width: 54vw;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .imageOverlayer {
+    border-radius: 0.4rem 0.4rem 0 0;
+  }
+  
+  .info {
+    flex-direction: column;
+    margin: 25px auto;
+  }
+}
