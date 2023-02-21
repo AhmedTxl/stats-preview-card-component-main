@@ -136,9 +136,11 @@ p {
   border-radius: 0 0.4rem 0.4rem 0;
   padding-top: 100px;
   overflow: hidden;
-  background: linear-gradient(rgba(113, 39, 161, 0.63), rgba(94, 39, 130, 0.51)),
-    url("/images/image-header-desktop.jpg");
+  background-image: url("/images/image-header-desktop.jpg");
   background-size: cover;
+  background-color: #e17ae1;
+  background-blend-mode: multiply;
+  opacity: 0.8;
   background-repeat: no-repeat;
 }
 
